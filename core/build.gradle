@@ -79,9 +79,9 @@ dependencies {
     api project.okhttpLogging
 
     /* Dependency - Kakao */
-    api project.kakaoUser
-    api project.kakaoTalk
-    api project.kakaoLink
+    api group: 'com.kakao.sdk', name: 'usermgmt', version: project.kakao_version
+    api group: 'com.kakao.sdk', name: 'kakaotalk', version: project.kakao_version
+    api group: 'com.kakao.sdk', name: 'kakaolink', version: project.kakao_version
 
     api 'androidx.constraintlayout:constraintlayout:1.1.3'
 

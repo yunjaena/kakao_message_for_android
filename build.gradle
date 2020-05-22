@@ -67,10 +67,7 @@ ext {
     okhttpLogging = "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     /* Dependency - Kakao */
-    def kakao_version = "2.0.0-beta02"
-    kakaoUser = "com.kakao.sdk:v2-user-rx:$kakao_version"
-    kakaoTalk = "com.kakao.sdk:v2-talk-rx:$kakao_version"
-    kakaoLink = "com.kakao.sdk:v2-link-rx:$kakao_version"
+    kakao_version = "1.27.0"
 }
 
 

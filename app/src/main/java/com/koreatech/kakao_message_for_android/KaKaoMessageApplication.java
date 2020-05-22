@@ -3,7 +3,9 @@ package com.koreatech.kakao_message_for_android;
 import android.app.Application;
 import android.content.Context;
 
-import com.kakao.sdk.common.KakaoSdk;
+import com.kakao.auth.IApplicationConfig;
+import com.kakao.auth.KakaoAdapter;
+import com.kakao.auth.KakaoSDK;
 
 public class KaKaoMessageApplication extends Application {
     private Context applicationContext;
@@ -16,6 +18,11 @@ public class KaKaoMessageApplication extends Application {
     }
 
     private void init(){
-        KakaoSdk.init(applicationContext, applicationContext.getResources().getString(R.string.kakao_api_key));
+        KakaoSDK.init(new KakaoAdapter() {
+            @Override
+            public IApplicationConfig getApplicationConfig() {
+                return () -> KaKaoMessageApplication.this;
+            }
+        });
     }
 }
