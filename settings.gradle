@@ -1,2 +1,3 @@
 rootProject.name='kakao_message_for_android'
 include ':app'
+include ':core'

@@ -1,8 +1,8 @@
 package com.koreatech.kakao_message_for_android;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
 
 public class MainActivity extends AppCompatActivity {
 
