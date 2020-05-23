@@ -6,6 +6,7 @@ import android.content.Context;
 import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.KakaoAdapter;
 import com.kakao.auth.KakaoSDK;
+import com.koreatech.core.toast.ToastUtil;
 
 public class KaKaoMessageApplication extends Application {
     private Context applicationContext;
@@ -24,5 +25,6 @@ public class KaKaoMessageApplication extends Application {
                 return () -> KaKaoMessageApplication.this;
             }
         });
+        ToastUtil.getInstance().init(applicationContext);
     }
 }
